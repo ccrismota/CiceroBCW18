@@ -15,7 +15,12 @@
 </head>
 
 <body>
-    <header>
+    <div class="header">
+        <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="imagem do logo">
+        <h1>Bootcomp de Java Spring com com Angular web [19]</h1>
+        <p>Turma de desenvolvimento FUll Stack da Soulcode Academy</p>
+    </div>
+    <header class="topnav">
         <ul>
             <li><a href="#cadastro">Cadastro</a></li>
             <li><a href="#cronograma">Trajetória</a></li>
@@ -23,62 +28,40 @@
             <li><a href="#trabalho">Orientações</a></li>
         </ul>
     </header>
-    
     <main>
-        <div class="divisorBase" id="trajetoria">
-            <h1>Trajetória de Sucesso</h1>
-            <table>
-                <tr>
-                    <th><strong>FASE</strong></th>
-                    <th><strong>Descrição</strong></th>
-                    <th><strong>Imagens</strong></th>
-                </tr>
-                <tr>
-                    <td>Primeira</td>
-                    <td>
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/img3.jpg"></a>
+                    <img src="./img/img3.jpg" alt="Fase 1">
+                    <div class="desc">
                         Inscrição no site oficial, execução do teste de lóogica, curso de trilha zero e montagem do
-                        pitcth
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/img3.jpg" alt="Ato da inscrição" width="180px" height="180px">
-                            <figcaption>Fig.1 - Ato da inscrição.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segunda</td>
-                    <td>
+                        pitcth.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Segunda Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/img2.jpg"></a>
+                    <img src="./img/img2.jpg" alt="Fase 2">
+                    <div class="desc">
                         Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
                         nesta fase se analisa a elegibilidade para a bolsa de estudos perante os clientes e o candidato
-                    </td>
-                    <td>
-                    <figure>    
-                        <img src="./img/img2.jpg" alt="Testes de lógica" width="180px" height="180px">
-                        <figcaption>Fig.2 - Testes de lógica.</figcaption>
-                    </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Terceira</td>
-                    <td>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/img1.jpg"></a>
+                    <img src="./img/img1.jpg" alt="Fase 3">
+                    <div class="desc">
                         Dinâmina em grupo com realização de teste online e convocação dos alunos aprovados.
-                    </td>
-                    <td>
-                        <figure>    
-                            <img src="./img/img1.jpg" alt="Aprovação" width="180px" height="180px">
-                            <figcaption>Fig.3 - Aprovação.</figcaption>
-                        </figure>
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td>Quarta</td>
-                    <td>
-                        Orientações de trabalho como dev.
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
             <form action="#" method="" class="divisorBase" id="cadastro">
