@@ -35,6 +35,9 @@ body{
 .topnav a:hover{
     background-color: rgb(250, 250, 56);
     color: rgb(27, 10, 100);
+    font-weight: bold;
+    transform: scale(1.15);
+    transition: 0.2s;
 }
 
 .topnav ul{
@@ -75,7 +78,7 @@ input[type=email],
 input[type=range]{
     width: 100%;
     padding: 12px;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-radius: 5px;
     resize: vertical;
 }
@@ -100,10 +103,17 @@ input[type=reset]{
 input[type=submit],
 input[type=reset]{
     background-color: #5365c8;
-    transition-delay: 03s;
+    transition-delay: 0.2s;
 }
 
-.form-container{
+input[type=submit]:hover,
+input[type=reset]:hover{
+    background-color: #132ecb;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.formContainer{
     margin: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -126,7 +136,7 @@ input[type=reset]{
     margin-top: 6px;
 }
 
-.form-row:after{
+.formRow:after{
     content: "";
     display: table;
     clear: both;
@@ -181,6 +191,33 @@ input[type=reset]{
     color: azure;
     font-weight: bold;
 }
+
+.footerSocial{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footerSocial > div{ /*Indica que a div de baixo também recebe as orientações da de cima*/
+    width: 30px;
+    margin: 8px;
+    text-align: center;
+}
+
+.footerSocial > div > img {
+    width: 40px;
+}
+
+.footerSocial > div > img:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.footerSocial > div > p{
+    text-align: center;
+    font: 10px;
+}
+
 
 @media screen and (max-width: 400px){
    .leftColun,
