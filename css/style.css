@@ -47,18 +47,6 @@ body{
     padding: 15px;
 }
 
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px){
-    .column{
-        width: 100%;
-    }
-}
-
 div.gallery{
     margin-left: auto;
     margin-right: auto;
@@ -77,4 +65,154 @@ div.desc{
     padding: 15px;
     text-align: center;
 }
-   
+
+input[type=text],
+select,
+textarea,
+input[type=date],
+input[type=password],
+input[type=email],
+input[type=range]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit],
+input[type=reset]{
+    background-color: #390b82;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+
+input[type=submit],
+input[type=reset]{
+    background-color: #5365c8;
+    transition-delay: 03s;
+}
+
+.form-container{
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+    text-align: right;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.form-row:after{
+    content: "";
+    display: table;
+    clear: both;
+    justify-items: flex-start;
+}
+
+.leftColun{
+    float: left;
+    width: 75%;
+}
+
+.rightColun{
+    float: left;
+    width: 25%;
+    background-color: aliceblue;
+    padding-left: 20px;
+}
+
+.img{
+    background-color: #ccc;
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row{
+    content: ""; /*classe abtrata fica fechada*/
+    display: table;
+    clear: both;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #7681fc;
+    margin-top:20px;
+    color: azure;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 400px){
+   .leftColun,
+   .rightColun{
+       width: 100%;
+       padding: 0;
+   }
+   .topnav{
+       float: none;
+       width: 100%;
+   }
+}
+
+@media screen and (max-width: 600px){
+    .col-20,
+    .col-70,
+    input[type=submit],
+    input[type=reset]{
+        width: 100%;
+        margin: 0;
+        transition: .5s;
+
+    }
+    .column{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .leftColun,
+    .rightColun{
+        width: 100%;
+        padding: 0;
+    }
+}
